@@ -126,6 +126,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.nav-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-box img {
+  width: 300px;
+}
+.nav-box .nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.nav-box .nav_links a {
+  text-decoration: none;
+  color: #31708E;
+}
+.nav-box .nav_links a:hover {
+  color: #8FC1E3;
+}
 html {
   background-color: #F7F9FB;
   font-size: 67.5%;
@@ -139,28 +160,28 @@ html body {
   color: #31708E;
   flex-direction: column;
 }
-html body .nav_links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 15px auto;
-  width: 400px;
-}
-html body .nav_links a {
-  text-decoration: none;
-  color: #31708E;
-}
-html body .nav_links a:hover {
-  color: #8FC1E3;
-}
 html body header {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  height: 475px;
+  background-image: url(https://files.slack.com/files-pri/T4JUEB3ME-FQPU2FXQX/kamil-pietrzak-ibmtjlic9km-unsplash.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+html body header h2 {
+  font-size: 3rem;
+  padding-bottom: 30px;
 }
 html body header .call-to-action {
   display: flex;
   margin: 5px;
   flex-direction: row;
   justify-content: center;
+}
+html body header .call-to-action .sign-up button {
+  background: #687864;
 }
 html body header .call-to-action button {
   margin: 10px;
@@ -170,9 +191,10 @@ html body header .call-to-action button {
   background: #5085A5;
   color: #F7F9FB;
   border-radius: 16px;
+  border: none;
 }
 html body header .call-to-action button:hover {
-  background-color: #8FC1E3;
+  background-color: #F7F9FB;
   color: #31708E;
 }
 html body .main-content {
@@ -185,9 +207,24 @@ html body .main-content .content-box {
   align-items: center;
   margin: 10px;
 }
+html body .main-content .content-box img {
+  width: 350px;
+  border-radius: 20px;
+}
 html body .main-content .content-box .text-content {
   padding: 15px;
 }
 html body .main-content .content-box .text-content h2 {
   font-size: 1.8rem;
+}
+html body footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 50px;
+}
+html body footer img {
+  width: 20px;
 }

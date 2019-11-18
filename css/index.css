@@ -128,7 +128,44 @@ table {
 }
 html {
   background-color: #F7F9FB;
+  font-size: 67.5%;
 }
-a {
+html body {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  color: #31708E;
+}
+html body .nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+  width: 400px;
+}
+html body .nav_links a {
   text-decoration: none;
+  color: #31708E;
+}
+html body .nav_links a:hover {
+  color: #8FC1E3;
+}
+html body header {
+  text-align: center;
+}
+html body header .call-to-action {
+  display: flex;
+  margin: 5px;
+  flex-direction: row;
+  justify-content: center;
+}
+html body header .call-to-action button {
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: 1.7rem;
+  background: #5085A5;
+  color: #F7F9FB;
+  border-radius: 16px;
 }

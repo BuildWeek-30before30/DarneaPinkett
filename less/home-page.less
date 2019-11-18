@@ -1,10 +1,50 @@
-@import '/less/variables.less';
-
 html {
     background-color: #F7F9FB;
+    font-size: 67.5%;
+
+    body {
+        font-family: 'Montserrat';
+        font-size: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+        color: @darkblue;
+
+        .nav_links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px auto;
+            width: 400px;
+            a {
+                text-decoration: none;
+                color: @darkblue;
+            }
+
+            a:hover {
+                color: @lightblue;
+            }
+        }
+
+        header {
+            text-align: center;
+
+            .call-to-action {
+                display: flex;
+                margin: 5px;
+                flex-direction: row;
+                justify-content: center;
+
+                button {
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    font-size: 1.7rem;
+                    background: @blue2;
+                    color: @white;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
 }
 
-a {
-    text-decoration: none;
-    color: @font-color;
-}

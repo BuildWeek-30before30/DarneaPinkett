@@ -171,8 +171,10 @@ html body header {
   border-radius: 20px;
 }
 html body header h2 {
-  font-size: 3rem;
+  font-size: 7rem;
   padding-bottom: 30px;
+  padding-top: 150px;
+  font-family: 'Pattaya';
 }
 html body header .call-to-action {
   display: flex;

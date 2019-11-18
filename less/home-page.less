@@ -1,0 +1,105 @@
+html {
+    background-color: #F7F9FB;
+    font-size: 67.5%;
+
+    body {
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+        color: @darkblue;
+        flex-direction: column;
+
+
+        
+
+        header {
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            height: 475px;
+            background-image: url(https://files.slack.com/files-pri/T4JUEB3ME-FQPU2FXQX/kamil-pietrzak-ibmtjlic9km-unsplash.jpg);
+            background-size: cover;
+            border-radius: 20px;
+
+            h2 {
+                font-size: 7rem;
+                padding-bottom: 30px;
+                padding-top: 150px;
+                font-family: 'Pattaya';
+            }
+
+            .call-to-action {
+                display: flex;
+                margin: 5px;
+                flex-direction: row;
+                justify-content: center;
+
+                .sign-up button {
+                    background: @green;
+                }
+
+                button {
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    font-size: 1.7rem;
+                    background: @blue2;
+                    color: @white;
+                    border-radius: 16px;
+                    border: none;
+                }
+
+                button:hover {
+                    background-color: @white;
+                    color: @darkblue
+                }
+
+            }
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            
+            .content-box {
+                display: flex;
+                padding: 10px;
+                align-items: center;
+                margin: 10px;
+                
+                img {
+                    width: 350px;
+                    border-radius: 20px;
+                }
+
+                .text-content {
+                    padding: 15px;
+
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+                }
+
+            }
+
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 50px;
+
+          img {
+            width: 20px;
+           }
+
+        }
+    }
+}
+

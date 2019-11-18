@@ -131,11 +131,13 @@ html {
   font-size: 67.5%;
 }
 html body {
+  display: flex;
   font-family: 'Montserrat';
   font-size: 1.5rem;
   width: 80%;
   margin: 0 auto;
   color: #31708E;
+  flex-direction: column;
 }
 html body .nav_links {
   display: flex;
@@ -168,4 +170,24 @@ html body header .call-to-action button {
   background: #5085A5;
   color: #F7F9FB;
   border-radius: 16px;
+}
+html body header .call-to-action button:hover {
+  background-color: #8FC1E3;
+  color: #31708E;
+}
+html body .main-content {
+  display: flex;
+  flex-direction: column;
+}
+html body .main-content .content-box {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+}
+html body .main-content .content-box .text-content {
+  padding: 15px;
+}
+html body .main-content .content-box .text-content h2 {
+  font-size: 1.8rem;
 }

@@ -3,11 +3,13 @@ html {
     font-size: 67.5%;
 
     body {
+        display: flex;
         font-family: 'Montserrat';
         font-size: 1.5rem;
         width: 80%;
         margin: 0 auto;
         color: @darkblue;
+        flex-direction: column;
 
         .nav_links {
             display: flex;
@@ -43,7 +45,35 @@ html {
                     color: @white;
                     border-radius: 16px;
                 }
+
+                button:hover {
+                    background-color: @lightblue;
+                    color: @darkblue
+                }
+
             }
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            
+            .content-box {
+                display: flex;
+                padding: 10px;
+                align-items: center;
+                margin: 10px;
+
+                .text-content {
+                    padding: 15px;
+
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+                }
+
+            }
+
         }
     }
 }

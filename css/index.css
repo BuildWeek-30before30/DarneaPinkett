@@ -157,6 +157,17 @@ table {
 .nav-box .nav_links a:hover {
   color: #8FC1E3;
 }
+html footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 50px;
+}
+html footer img {
+  width: 20px;
+}
 html {
   background-color: #F7F9FB;
   font-size: 67.5%;
@@ -172,9 +183,9 @@ html body {
 }
 html body header {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   height: 475px;
   background-image: url(https://files.slack.com/files-pri/T4JUEB3ME-FQPU2FXQX/kamil-pietrzak-ibmtjlic9km-unsplash.jpg);
   background-size: cover;
@@ -194,9 +205,9 @@ html body header h2 {
 }
 html body header .call-to-action {
   display: flex;
+  justify-content: center;
   margin: 5px;
   flex-direction: row;
-  justify-content: center;
 }
 html body header .call-to-action .sign-up button {
   background: #687864;
@@ -251,15 +262,4 @@ html body .main-content .content-box .about {
     display: flex;
     flex-direction: column-reverse;
   }
-}
-html footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 50px;
-}
-html footer img {
-  width: 20px;
 }

@@ -131,8 +131,18 @@ table {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .nav-box {
+    flex-direction: column;
+  }
+}
 .nav-box img {
   width: 300px;
+}
+@media (max-width:500px) {
+  .nav-box img {
+    margin-left: 50px;
+  }
 }
 .nav-box .nav_links {
   display: flex;
@@ -169,6 +179,12 @@ html body header {
   background-image: url(https://files.slack.com/files-pri/T4JUEB3ME-FQPU2FXQX/kamil-pietrzak-ibmtjlic9km-unsplash.jpg);
   background-size: cover;
   border-radius: 20px;
+}
+@media (max-width:500px) {
+  html body header {
+    background-image: hidden;
+    margin-bottom: 25px;
+  }
 }
 html body header h2 {
   font-size: 7rem;
@@ -209,6 +225,11 @@ html body .main-content .content-box {
   align-items: center;
   margin: 10px;
 }
+@media (max-width:500px) {
+  html body .main-content .content-box {
+    flex-direction: column;
+  }
+}
 html body .main-content .content-box img {
   width: 350px;
   border-radius: 20px;
@@ -217,7 +238,10 @@ html body .main-content .content-box .text-content {
   padding: 15px;
 }
 html body .main-content .content-box .text-content h2 {
-  font-size: 1.8rem;
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Pattaya';
 }
 html body footer {
   display: flex;

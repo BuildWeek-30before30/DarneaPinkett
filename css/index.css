@@ -160,6 +160,13 @@ html body {
   color: #31708E;
   flex-direction: column;
 }
+html body .header-about {
+  background-image: none;
+  height: 300px;
+}
+html body .header-about h2 {
+  margin-bottom: 30px;
+}
 html body header {
   display: flex;
   flex-direction: column;
@@ -209,6 +216,10 @@ html body .main-content .content-box {
   align-items: center;
   margin: 10px;
 }
+html body .main-content .content-box a {
+  text-decoration: none;
+  color: #31708E;
+}
 html body .main-content .content-box img {
   width: 350px;
   border-radius: 20px;
@@ -219,6 +230,31 @@ html body .main-content .content-box .text-content {
 html body .main-content .content-box .text-content h2 {
   font-size: 1.8rem;
 }
+html body .main-content .about {
+  display: flex;
+}
+html body .main-content .about .content-box {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+  width: 30%;
+  flex-wrap: wrap;
+}
+html body .main-content .about .content-box a {
+  text-decoration: none;
+  color: #31708E;
+}
+html body .main-content .about .content-box img {
+  width: 350px;
+  border-radius: 20px;
+}
+html body .main-content .about .content-box .text-content {
+  padding: 15px;
+}
+html body .main-content .about .content-box .text-content h2 {
+  font-size: 1.8rem;
+}
 html body footer {
   display: flex;
   align-items: center;
@@ -226,6 +262,10 @@ html body footer {
   font-size: 1rem;
   text-align: center;
   margin-top: 50px;
+}
+html body footer a {
+  text-decoration: none;
+  color: #31708E;
 }
 html body footer img {
   width: 20px;

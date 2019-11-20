@@ -238,7 +238,10 @@ html body .main-content .content-box .text-content {
   padding: 15px;
 }
 html body .main-content .content-box .text-content h2 {
-  font-size: 1.8rem;
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Pattaya';
 }
 html body footer {
   display: flex;

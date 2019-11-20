@@ -182,7 +182,7 @@ html body header {
 }
 @media (max-width:500px) {
   html body header {
-    background-image: hidden;
+    background-image: none;
     margin-bottom: 25px;
   }
 }
@@ -243,7 +243,16 @@ html body .main-content .content-box .text-content h2 {
   padding: 10px;
   font-family: 'Pattaya';
 }
-html body footer {
+html body .main-content .content-box .about {
+  display: flex;
+}
+@media (max-width:500px) {
+  html body .main-content .content-box .about {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+html footer {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -251,6 +260,6 @@ html body footer {
   text-align: center;
   margin-top: 50px;
 }
-html body footer img {
+html footer img {
   width: 20px;
 }

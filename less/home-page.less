@@ -25,7 +25,7 @@ html {
             border-radius: 20px;
 
             @media @mobile {
-                background-image: hidden;
+                background-image: none; 
                 margin-bottom: 25px;
             }
 
@@ -97,12 +97,20 @@ html {
                     }
 
                     
+                } 
+                  
+                .about {
+                    display: flex;
+
+                    @media @mobile {
+                    display: flex;
+                    flex-direction: column-reverse;
                 }
-                 
             }
-
-
-        }
+         }
+       }
+    }
+  
 
         footer {
             display: flex;
@@ -118,5 +126,3 @@ html {
 
         }
     }
-}
-

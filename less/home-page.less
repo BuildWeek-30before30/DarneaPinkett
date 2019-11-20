@@ -24,6 +24,11 @@ html {
             background-size: cover;
             border-radius: 20px;
 
+            @media @mobile {
+                background-image: hidden;
+                margin-bottom: 25px;
+            }
+
             h2 {
                 font-size: 7rem;
                 padding-bottom: 30px;
@@ -70,6 +75,10 @@ html {
                 align-items: center;
                 margin: 10px;
                 
+                @media @mobile {
+                    flex-direction: column;
+                }
+
                 img {
                     width: 350px;
                     border-radius: 20px;

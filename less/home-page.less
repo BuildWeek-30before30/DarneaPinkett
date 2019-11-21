@@ -15,19 +15,21 @@ html {
         
 
         header {
-            display:flex;
+
+            .center(flex, center);
             flex-direction: column;
             text-align: center;
-            justify-content: center;
             height: 475px;
             background-image: url(https://files.slack.com/files-pri/T4JUEB3ME-FQPU2FXQX/kamil-pietrzak-ibmtjlic9km-unsplash.jpg);
             background-size: cover;
             border-radius: 20px;
 
             @media @mobile {
-                background-image: hidden;
+                background-image: none; 
                 margin-bottom: 25px;
             }
+
+    
 
             h2 {
                 font-size: 7rem;
@@ -37,10 +39,10 @@ html {
             }
 
             .call-to-action {
-                display: flex;
+
+                .center(flex,center);
                 margin: 5px;
                 flex-direction: row;
-                justify-content: center;
 
                 .sign-up button {
                     background: @green;
@@ -76,7 +78,7 @@ html {
                 margin: 10px;
                 
                     
-                @media @mobile {
+                @media @tablet {
                     flex-direction: column;
                 }
             
@@ -97,26 +99,19 @@ html {
                     }
 
                     
+                } 
+                  
+                .about {
+                    display: flex;
+
+                    @media @tablet {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
                 }
-                 
             }
-
-
-        }
-
-        footer {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            font-size: 1rem;
-            text-align: center;
-            margin-top: 50px;
-
-          img {
-            width: 20px;
-           }
-
-        }
+         }
+       }
     }
-}
-
+  
+    }

@@ -236,7 +236,7 @@ html body .main-content .content-box {
   align-items: center;
   margin: 10px;
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   html body .main-content .content-box {
     flex-direction: column;
   }
@@ -257,9 +257,10 @@ html body .main-content .content-box .text-content h2 {
 html body .main-content .content-box .about {
   display: flex;
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   html body .main-content .content-box .about {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
 }

@@ -232,14 +232,15 @@ html body .main-content .content-box .text-content h2 {
 }
 html body .main-content .about {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 html body .main-content .about .content-box {
   display: flex;
   padding: 10px;
   align-items: center;
   margin: 10px;
-  width: 30%;
-  flex-wrap: wrap;
 }
 html body .main-content .about .content-box a {
   text-decoration: none;
@@ -247,6 +248,7 @@ html body .main-content .about .content-box a {
 }
 html body .main-content .about .content-box img {
   width: 350px;
+  height: 350px;
   border-radius: 20px;
 }
 html body .main-content .about .content-box .text-content {
@@ -262,6 +264,7 @@ html body footer {
   font-size: 1rem;
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 html body footer a {
   text-decoration: none;

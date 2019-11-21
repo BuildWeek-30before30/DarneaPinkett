@@ -11,27 +11,31 @@ html {
         color: @darkblue;
         flex-direction: column;
 
-
         .header-about {
             background-image: none;
             height: 300px;
-
+            align-content: center;
             h2 {
                 margin-bottom: 30px;
             }
         }
 
         header {
-            display:flex;
+
+            .center(flex, center);
             flex-direction: column;
             text-align: center;
-            justify-content: center;
             height: 475px;
             background-image: url(https://files.slack.com/files-pri/T4JUEB3ME-FQPU2FXQX/kamil-pietrzak-ibmtjlic9km-unsplash.jpg);
             background-size: cover;
             border-radius: 20px;
 
+            @media @mobile {
+                background-image: none; 
+                margin-bottom: 25px;
+            }
 
+    
 
             h2 {
                 font-size: 7rem;
@@ -41,10 +45,10 @@ html {
             }
 
             .call-to-action {
-                display: flex;
+
+                .center(flex,center);
                 margin: 5px;
                 flex-direction: row;
-                justify-content: center;
 
                 .sign-up button {
                     background: @green;
@@ -69,90 +73,76 @@ html {
             }
         }
 
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            
-            .content-box {
+        .container {
+
+            .main-content {
                 display: flex;
-                padding: 10px;
-                align-items: center;
-                margin: 10px;
-
-                a { 
-                    text-decoration: none;
-                    color: @darkblue;
-                }
+                flex-direction: column;
                 
-                img {
-                    width: 350px;
-                    border-radius: 20px;
-                }
+                .content-box {
+                    display: flex;
+                    padding: 10px;
+                    align-items: center;
+                    margin: 10px;
+    
+                    a { 
+                        text-decoration: none;
+                        color: @darkblue;
+                    }
+                    
+                        
+                    @media @tablet {
+                        flex-direction: column;
+                    }
+                
+                    img {
+                        width: 350px;
+                        border-radius: 20px;
+                    }
+    
+                    .text-content {
+                        padding: 15px;
+    
+                        h2 {
+                            font-size: 2.6rem;
+                            text-align: center;
+                            padding: 10px;
+                            font-family: 'Pattaya';
+            
+                        }
+    
+                        
+                    } 
+    
+    
+                }   
+    
+            }
+            
+            .about {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
 
-                .text-content {
-                    padding: 15px;
+                .content-box {
+                    width: 25%;
 
-                    h2 {
-                        font-size: 1.8rem;
+                    img {
+                        border-radius: 150px;
                     }
                 }
 
-            }
-
-        }
-
-        .main-content .about{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-            
-            .content-box {
+                @media @tablet {
                 display: flex;
-                padding: 10px;
+                flex-direction: column-reverse;
                 align-items: center;
-                margin: 10px;
-
-                a { 
-                    text-decoration: none;
-                    color: @darkblue;
-                }
-                
-                img {
-                    width: 350px;
-                    height: 350px;
-                    border-radius: 20px;
-                }
-
-                .text-content {
-                    padding: 15px;
-
-                    h2 {
-                        font-size: 1.8rem;
-                    }
-                }
             }
         }
 
-        footer {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            font-size: 1rem;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-
-            a {
-                text-decoration: none;
-                color: @darkblue;
-            }
-
-          img {
-            width: 20px;
-           }
-
-        }
+       
+         
+       }
     }
+  
 }
-
